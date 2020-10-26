@@ -1,0 +1,18 @@
+
+public class Driver {
+	
+	public static void printBook(Book b) {
+		System.out.println("Title : " + b.getTitle() + 
+				"\nISBN : " + b.getIsbn() +
+				"\nAuthor Name : " + b.getAuthor().getFirstName() +
+				 " " + b.getAuthor().getLastName() + 
+				 "\nAuthor Birth Year : " +b.getAuthor().getBirthYear());
+	}
+
+	public static void main(String[] args) {
+		Author author1 = new Author("John", "Doe", 1985);
+		Book book1 = new Book("X", author1, 198395);
+		printBook(book1);
+	}
+
+}

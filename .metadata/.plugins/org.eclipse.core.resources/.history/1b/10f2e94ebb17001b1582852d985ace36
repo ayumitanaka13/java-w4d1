@@ -1,0 +1,76 @@
+
+public class Book {
+	
+	private String title;
+	private Author author;
+	int isbn;
+
+	//CONSTRUCTOR
+	
+	public Book(String title, Author author, int isbn) {
+		this.title = title;
+		this.author = author;
+		this.isbn = isbn;
+	}
+	
+	
+	
+	//GETTER
+	
+	/*
+	 * @ return title
+	 */
+	public String gettitle() {
+		return title;
+	}
+	/*
+	 * @ return author
+	 */
+	public String getauthor() {
+		return author;
+	}
+	/*
+	 * @ return isbn
+	 */
+	public int getisbn() {
+		return isbn;
+	}
+	
+	
+	
+	// SETTER
+	
+	/*
+	 * @ param title
+	 */
+	public void settitle(String title) {
+		if (!title.isEmpty() && !title.equalsIgnoreCase(null)) {
+			this.title = title;
+		} else {
+			this.title = "Unknown";
+		}
+		
+	}
+	/*
+	 * @ param author
+	 */
+	public void setauthor(String author) {
+		if (!author.isEmpty() && !author.equalsIgnoreCase(null)) {
+			this.author = author;
+		} else {
+			this.author = "Unknown";
+		}
+	}
+	/*
+	 * @ param isbn
+	 */
+	public void setisbn(int isbn) {
+		if (isbn < 1900) {
+			this.isbn = 1900;
+		} else {
+			this.isbn = isbn;
+		}		
+	}
+	
+
+}

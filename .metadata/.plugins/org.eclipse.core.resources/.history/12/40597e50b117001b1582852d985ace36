@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Driver {
+	
+	public static void printStudents(ArrayList<Student> studList) {
+		for (Student s : studList) {
+			System.out.println("Name: " + s.getFirstName() + " " +
+					s.getLastName() + "\nYear of Birth: " +
+					s.getBirthYear());
+		}
+	}
+	
+	public static void removeStudent(String student, ArrayList<Student> studList) {
+		for (Student s : studList) {
+			if (s.getLastName().equalsIgnoreCase(student)) {
+				
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		Student student1 = new Student("Jane", "Doe", 1980);
+		Student student2 = new Student("John", "Dew", 1987);
+		Student student3 = new Student("Sarah", "Green", 1985);
+		
+		studentList.add(student1);
+		studentList.add(student2);
+		studentList.add(student3);
+		
+		printStudents(studentList);
+		
+		System.out.println("Enter the neme of student whom you want to remove");
+		String studentEntered = input.nextLine();
+	}
+}

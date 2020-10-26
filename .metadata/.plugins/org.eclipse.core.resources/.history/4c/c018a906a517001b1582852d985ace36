@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		String[] names = new String[3];
+		names[0] = "Jane";
+		names[1] = "Sarah";
+		names[2] = "Mike";
+		
+		int[] numInts = new int[4];
+		ArrayList<String> nameList = new ArrayList<String>();
+		nameList.add("Ayumi");
+		nameList.add("Bob");
+		nameList.add("Kim");
+		nameList.add("Dan");
+		
+		System.out.println(nameList.size()); //4
+		System.out.println(nameList.get(2)); //Kim
+		nameList.remove(0);
+		//remove Ayumi by calling remove method so now we have Sarah as the 0 element
+		System.out.println(nameList.get(0)); //Bob
+	}
+
+}

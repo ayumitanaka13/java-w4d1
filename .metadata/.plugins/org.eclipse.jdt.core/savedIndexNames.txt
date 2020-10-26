@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/ayumitanaka/Downloads/Cornerstone/java/week4/d1/.metadata/.plugins/org.eclipse.jdt.core
+3431053729.index
+57917814.index

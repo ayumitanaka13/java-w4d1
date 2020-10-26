@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class Driver {
+	
+	public static void printStudent(ArrayList<Student> studList) {
+		for (Student student : studList) {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		Student student1 = new Student("Jane", "Doe", 1980);
+		Student student2 = new Student("John", "Dew", 1987);
+		Student student3 = new Student("Sarah", "Green", 1985);
+		
+		studentList.add(student1);
+		studentList.add(student2);
+		studentList.add(student3);
+	}
+}
